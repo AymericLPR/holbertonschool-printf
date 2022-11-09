@@ -65,6 +65,13 @@ int n = va_arg(args, int);
 int i, in;
 int count = 1;
 int number = 0;
+
+if (n == INT_MIN)
+{
+_print_intmin();
+return(10);
+
+}
 if (n < 0)
 {
 in = (n * -1);
@@ -86,6 +93,25 @@ number += _putchar(((in / count) % 10) + '0');
 count /= 10;
 }
 return (number);
+}
+
+/**
+ * _print_intmin - prints int min
+ */
+
+void _print_intmin(void)
+{
+_putchar('-');
+_putchar('2');
+_putchar('1');
+_putchar('4');
+_putchar('7');
+_putchar('4');
+_putchar('8');
+_putchar('3');
+_putchar('6');
+_putchar('4');
+_putchar('8');
 }
 
 /**
