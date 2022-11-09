@@ -67,14 +67,14 @@ int count = 1;
 int number = 0;
 if (n < 0)
 {
-i = (n * -1);
+in = (n * -1);
 number += _putchar('-');
 }
 else
 {
-i = n;
+in = n;
 }
-in = i;
+i = in;
 while (i > 9)
 {
 i /= 10;
