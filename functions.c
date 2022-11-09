@@ -54,6 +54,24 @@ return (*per);
 }
 
 /**
+ * _printINTMIN - prints int min
+ */
+void _printINTMIN(void)
+{
+_putchar('-');
+_putchar('2');
+_putchar('1');
+_putchar('4');
+_putchar('7');
+_putchar('4');
+_putchar('8');
+_putchar('3');
+_putchar('6');
+_putchar('4');
+_putchar('8');
+}
+
+/**
  * print_d - prints decimal
  * @args: decimal argument
  * Return: number
@@ -68,10 +86,10 @@ int number = 0;
 
 if (n == INT_MIN)
 {
-_print_intmin();
+_printINTMIN();
 return(10);
-
 }
+
 if (n < 0)
 {
 in = (n * -1);
@@ -93,25 +111,6 @@ number += _putchar(((in / count) % 10) + '0');
 count /= 10;
 }
 return (number);
-}
-
-/**
- * _print_intmin - prints int min
- */
-
-void _print_intmin(void)
-{
-_putchar('-');
-_putchar('2');
-_putchar('1');
-_putchar('4');
-_putchar('7');
-_putchar('4');
-_putchar('8');
-_putchar('3');
-_putchar('6');
-_putchar('4');
-_putchar('8');
 }
 
 /**
