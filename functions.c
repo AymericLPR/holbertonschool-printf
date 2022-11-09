@@ -87,7 +87,7 @@ int number = 0;
 if (n == INT_MIN)
 {
 _printINTMIN();
-return(10);
+return(11);
 }
 
 if (n < 0)
