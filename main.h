@@ -17,7 +17,7 @@ typedef struct structure
 {
 char *valid;
 int (*f)(va_list);
-} struct;
+} struc;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
