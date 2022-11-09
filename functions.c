@@ -62,15 +62,19 @@ return (*per);
 int print_d(va_list args)
 {
 int n = va_arg(args, int);
-int i;
+int i, in;
 int count = 1;
 int number = 0;
 if (n < 0)
 {
-n = (n * -1);
+i = (n * -1);
 number += _putchar('-');
 }
+else
+{
 i = n;
+}
+in = i;
 while (i > 9)
 {
 i /= 10;
@@ -78,7 +82,7 @@ count *= 10;
 }
 while (count >= 1)
 {
-number += _putchar(((n / count) % 10) + '0');
+number += _putchar(((in / count) % 10) + '0');
 count /= 10;
 }
 return (number);
