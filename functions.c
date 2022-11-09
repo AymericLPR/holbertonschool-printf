@@ -44,14 +44,14 @@ return (number);
 
 int print_percent(va_list args)
 {
-char *str
+char *per
 
-str = "%";
-if (va_arg(args, int) == *str)
+per = "%";
+if (va_arg(args, int) == *per)
 {
-return (*str);
+return (*per);
 }
-return (*str);
+return (*per);
 }
 
 /**
