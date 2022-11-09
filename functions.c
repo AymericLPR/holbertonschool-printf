@@ -40,28 +40,39 @@ return (number);
  * print_d - fetch decimal integer
  *
  */
+
 int print_d(va_list args)
 {
-	float d;
-	unsigned int i;
+int n = va_arg(args, int);
+int i;
+int count = 1;
+int number = 0;
+if (n < 0)
+{
+n = (n * -1);
+number += _putchar('-');
+}
+i = n;
+while (i > 9)
+{
+i /= 10;
+count *= 10;
+}
+while (count >= 1)
+{
+number += _putchar(((n / count) % 10) + '0');
+count /= 10;
+}
+return (number);
+}
 
-	for (i = 0; i < 0; i++)
-	{
-	
-		
-		
-
-
-	_putchar("d");
-	
-	
-	
 /**
- * print_i - desc
- *
- */	
+ * print_i - prints integer
+ * @args: integer argument
+ * Return: function
+ */
+
 int print_i(va_list args)
 {
-
-	_putchar("i");
-
+return (print_d(args));
+}
