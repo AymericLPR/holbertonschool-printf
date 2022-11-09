@@ -44,13 +44,15 @@ return (number);
 
 int print_percent(__attribute__((unused))va_list args)
 {
-_putchar('%');
-return (1);
+char *str
+str = "%";
+return (*str);
 }
 
 /**
- * print_d - fetch decimal integer
- *
+ * print_d - prints decimal
+ * @args: decimal argument
+ * Return: number
  */
 
 int print_d(va_list args)
