@@ -36,7 +36,7 @@ i += 2;
 }
 }
 else
-}
+{
 number += _putchar(format[i]);
 i++;
 }
