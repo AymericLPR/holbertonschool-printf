@@ -37,6 +37,18 @@ return (number);
 }
 
 /**
+ * print_percent - percent
+ * @args: argument
+ * Return: return percent
+ */
+
+int print_percent(va_list args)
+{
+_putchar('%');
+return (1);
+}
+
+/**
  * print_d - fetch decimal integer
  *
  */
