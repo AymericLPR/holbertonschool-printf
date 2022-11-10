@@ -80,7 +80,7 @@ _putchar('8');
 int print_d(va_list args)
 {
 int n = va_arg(args, int);
-int i, in;
+int i;
 int count = 1;
 int number = 0;
 
@@ -92,14 +92,10 @@ return(11);
 
 if (n < 0)
 {
-in = (n * -1);
+n = (n * -1);
 number += _putchar('-');
 }
-else
-{
-in = n;
-}
-i = in;
+i = n;
 while (i > 9)
 {
 i /= 10;
@@ -107,7 +103,7 @@ count *= 10;
 }
 while (count >= 1)
 {
-number += _putchar(((in / count) % 10) + '0');
+number += _putchar(((n / count) % 10) + '0');
 count /= 10;
 }
 return (number);
