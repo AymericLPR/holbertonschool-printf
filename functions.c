@@ -54,9 +54,18 @@ return (*per);
 }
 
 /**
- * _printINTMIN - prints int min
+ * print_d - prints decimal
+ * @args: decimal argument
+ * Return: number
  */
-void _printINTMIN(void)
+
+int print_d(va_list args)
+{
+int n = va_arg(args, int);
+int i;
+int count = 1;
+int number = 0;
+if (n == INT_MIN)
 {
 _putchar('-');
 _putchar('2');
@@ -69,27 +78,8 @@ _putchar('3');
 _putchar('6');
 _putchar('4');
 _putchar('8');
+return (11);
 }
-
-/**
- * print_d - prints decimal
- * @args: decimal argument
- * Return: number
- */
-
-int print_d(va_list args)
-{
-int n = va_arg(args, int);
-int i;
-int count = 1;
-int number = 0;
-
-if (n == INT_MIN)
-{
-_printINTMIN();
-return(11);
-}
-
 if (n < 0)
 {
 n = (n * -1);
